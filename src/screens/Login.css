@@ -1,0 +1,97 @@
+/* Login.css */
+
+
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  color: #0CEAD9;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #0CEAD9;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #39968E;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #2AC0B4;
+  color: #fff;
+}
+
+input:focus,
+select:focus {
+  border-color: #0CEAD9;
+  outline: none;
+}
+
+button {
+  background-color: #39968E;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #3B6B67;
+}
+
+button.secondary {
+  background-color: #2AC0B4;
+  color: white;
+  margin-top: 10px;
+}
+
+button.secondary:hover {
+  background-color: #3B6B67;
+}
+
+i {
+  margin-right: 10px;
+}
+
+/* Fondo animado */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(-45deg, #2E413F, #2D3333, #2E413F, #2D3333);
+  background-size: 400% 400%;
+  animation: backgroundAnimation 2.5s ease infinite;
+}

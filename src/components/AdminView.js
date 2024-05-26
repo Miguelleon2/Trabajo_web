@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { getFirestore, collection, getDocs, updateDoc, doc, deleteDoc } from "firebase/firestore";
 import TorneoForm from "./TorneoForm";
 import TorneoParticipants from "./TorneoParticipants";
+import './AdminView.css';
+
+
+
 
 function AdminView() {
   const [torneos, setTorneos] = useState([]);

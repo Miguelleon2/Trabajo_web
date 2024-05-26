@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 import { firebaseApp } from "../firebase/credenciales";
+import './Login.css';
+
 
 const auth = getAuth(firebaseApp);
 

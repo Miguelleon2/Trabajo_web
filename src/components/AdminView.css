@@ -1,0 +1,103 @@
+/* AdminView.css */
+
+.container {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background-color: #39968E;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    color: #0CEAD9;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .card-actions button {
+    background-color: #2AC0B4;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card-actions button:hover {
+    background-color: #3B6B67;
+  }
+  
+  form {
+    background-color: #2E413F;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  form h2 {
+    color: #0CEAD9;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #39968E;
+    border-radius: 5px;
+    background-color: #2AC0B4;
+    color: #fff;
+    margin-top: 5px;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="date"]:focus,
+  form input[type="number"]:focus {
+    border-color: #0CEAD9;
+    outline: none;
+  }
+  
+  form button {
+    background-color: #39968E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  form button:hover {
+    background-color: #3B6B67;
+  }
+  

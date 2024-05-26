@@ -5,6 +5,7 @@ body {
   font-family: 'Poppins', sans-serif; /* Tipografía moderna */
   margin: 0;
   padding: 0;
+  overflow-y: auto; /* Agrega esta línea para habilitar el scroll vertical */
 }
 
 h1, h2, h3, h4, h5, h6 {
