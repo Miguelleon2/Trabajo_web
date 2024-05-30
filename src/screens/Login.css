@@ -3,95 +3,73 @@
 
 
 .container {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.5); /* Fondo blanco con opacidad para el contraste */
+  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-  backdrop-filter: blur(10px);
+  box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-left: 50px; /* Margen para separar del borde izquierdo */
 }
 
 h1 {
-  color: #0CEAD9;
+  color: #1b837a;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #39968E;
 }
 
-label {
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: #0CEAD9;
-}
-
-input[type="email"],
-input[type="password"],
-select {
-  width: calc(100% - 22px);
+form input[type="email"],
+form input[type="password"],
+form select {
+  width: 100%;
   padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #39968E;
+  border: 1px solid #ddd;
   border-radius: 5px;
+  margin-top: 5px;
   font-size: 16px;
-  background-color: #2AC0B4;
-  color: #fff;
 }
 
-input:focus,
-select:focus {
-  border-color: #0CEAD9;
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form select:focus {
+  border-color: #2AC0B4;
   outline: none;
 }
 
-button {
-  background-color: #39968E;
+form button {
+  background-color: #2AC0B4;
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   margin-top: 20px;
+  width: 100%;
 }
 
-button:hover {
-  background-color: #3B6B67;
-}
-
-button.secondary {
-  background-color: #2AC0B4;
-  color: white;
-  margin-top: 10px;
-}
-
-button.secondary:hover {
-  background-color: #3B6B67;
+form button:hover {
+  background-color: #39968E;
 }
 
 i {
   margin-right: 10px;
 }
 
-/* Fondo animado */
-@keyframes backgroundAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+button {
+  background-color: transparent;
+  border: none;
+  color: #39968E;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
-body {
-  background: linear-gradient(-45deg, #2E413F, #2D3333, #2E413F, #2D3333);
-  background-size: 400% 400%;
-  animation: backgroundAnimation 2.5s ease infinite;
+button:hover {
+  color: #2AC0B4;
 }

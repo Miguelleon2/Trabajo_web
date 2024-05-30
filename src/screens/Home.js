@@ -9,12 +9,16 @@ const auth = getAuth(firebaseApp);
 
 function Home({ user }) {
   return (
-    <div className="container">
-      <div className="header">
+    <div className="home-container">
+      <header className="home-header">
         <h1>Bienvenido a la App de Tenis</h1>
-        <button onClick={() => signOut(auth)}><i className="fas fa-sign-out-alt"></i> Cerrar sesión</button>
-      </div>
-      {user.rol === "admin" ? <AdminView /> : <UserView user={user} />}
+        <button className="home-logout-button" onClick={() => signOut(auth)}>
+          <i className="fas fa-sign-out-alt"></i> Cerrar sesión
+        </button>
+      </header>
+      <main className="home-main">
+        {user.rol === "admin" ? <AdminView /> : <UserView user={user} />}
+      </main>
     </div>
   );
 }

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 import { firebaseApp } from "../firebase/credenciales";
-import './Login.css';
-
+import './Login.css'; // Importa el archivo CSS
 
 const auth = getAuth(firebaseApp);
 

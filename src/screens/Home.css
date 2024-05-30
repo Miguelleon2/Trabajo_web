@@ -1,42 +1,94 @@
 /* Home.css */
 
-.container {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #2E413F 0%, #2D3333 100%);
-    color: #fff;
-    min-height: 100vh;
+
+  .home-container {
+    width: 1%;
+    max-width: 1000px; /* Ancho máximo */
+    background: #34CFB2; /* Fondo del contenedor principal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
   }
   
-  .header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .header h1 {
-    color: #0CEAD9;
+  .home-header {
+    border-bottom: 1px solid #3B4F4B; /* Línea divisoria */
+    padding-bottom: 10px;
     margin-bottom: 20px;
+    text-align: center;
   }
   
-  button {
-    background-color: #39968E;
-    color: white;
+  .home-header h1 {
+    font-size: 24px;
+    color: #006a56; /* Color del encabezado */
+  }
+  
+  .home-main {
+    flex-grow: 1;
+  }
+  
+  .home-logout-button {
+    background-color: #000000; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
+    width: fit-content; /* Ancho basado en el contenido */
   }
   
-  button:hover {
-    background-color: #3B6B67;
+  .home-logout-button i {
+    margin-right: 5px;
   }
   
-  i {
-    margin-right: 10px;
+  .home-logout-button:hover {
+    background-color: #14FAD0; /* Color de fondo del botón al pasar el ratón */
+  }
+  
+  .admin-view, .user-view {
+    margin-top: 20px;
+    width: 100%; /* Ancho completo */
+  }
+  
+  .admin-view h2, .user-view h2 {
+    font-size: 20px;
+    color: #14FAD0; /* Color de los títulos */
+    margin-bottom: 10px;
+  }
+  
+  .admin-view p, .user-view p {
+    font-size: 14px;
+    color: #477A71; /* Color del texto principal */
+    margin-bottom: 10px;
+  }
+  
+  .admin-view button, .user-view button {
+    background-color: #34CFB2; /* Color de fondo de los botones */
+    color: white; /* Color del texto de los botones */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .admin-view button:hover, .user-view button:hover {
+    background-color: #44A694; /* Color de fondo de los botones al pasar el ratón */
+  }
+  
+  .admin-view button i, .user-view button i {
+    margin-right: 5px;
   }
   
